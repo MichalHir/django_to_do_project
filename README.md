@@ -10,18 +10,19 @@ So reserve function should have a 2 select boxes of people that can reserve
   # member2=models.ForeignKey(Member,on_delete=models.SET_NULL,related_name='courts', null=True,blank=True)
 
 
-  def reserve(request, id):
-#   court = Court.objects.get(id=id)
-#   court.is_occupied = True
-#   court.save()
-#   return redirect('/courts/')
+cls
 
-# def unreserve(request, id):
-#   court = Court.objects.get(id=id)
-#   court.is_occupied = False
-#   court.save()
-#   return redirect('/courts/')
+Retrieve records where the join date field is within a specified date rangeMember.objects.filter(firstname__startswith='S').values()
+
+
+Retrieve all records where the court is in the list [1,2,3]
+Next lines - we can do it with court model. try also with member model
+Retrieve all records where the court is occupied=true. 
+
 
 python -m venv venv
 .\venv\Scripts\activate
+Pip install -r requirements.txt
+
 Python manage.py runserver
+Python manage.py shell
